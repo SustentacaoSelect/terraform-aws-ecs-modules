@@ -92,3 +92,13 @@ variable "listener_arn" {
   type        = string
   description = "ARN do Listener do Load Balancer"
 }
+
+variable "scale_in_cooldown" {
+  type = number
+  default = 300
+}
+
+variable "scale_out_cooldown" {
+  type = number
+  default = 300
+}
